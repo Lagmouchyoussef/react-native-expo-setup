@@ -1,29 +1,47 @@
-# React Native Expo Setup
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4A90E2,100:61DAFB&height=180&section=header&text=React%20Native%20Expo%20Setup&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38" alt="React Native Expo Setup banner" />
+
+<a href="https://github.com/Lagmouchyoussef/react-native-expo-setup">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=4A90E2&center=true&vCenter=true&width=620&lines=Set+up+Node.js+%26+npm;Create+your+first+Expo+project;Build+a+React+Native+screen;Run+it+on+phone%2C+emulator+or+web" alt="Typing animation" />
+</a>
+
+<br/>
+
+![Node.js](https://img.shields.io/badge/Node.js-LTS-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![npm](https://img.shields.io/badge/npm-package%20manager-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-SDK%2058-000020?style=for-the-badge&logo=expo&logoColor=white)
+![React Native](https://img.shields.io/badge/React%20Native-0.88-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Platforms](https://img.shields.io/badge/Android%20%7C%20iOS%20%7C%20Web-supported-4A90E2?style=for-the-badge)
+
+</div>
+
+# 📱 React Native Expo Setup
 
 A step-by-step guide to setting up a React Native development environment with Node.js, npm and Expo, followed by the creation and execution of a first mobile application.
 
-> **Context:** Lab 1 (TP1) of the *Mobile Development* course, 4IIR, EMSI.
+> 🎓 **Context:** Lab 1 (TP1) of the *Mobile Development* course, 4IIR, EMSI.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-1. [Overview](#overview)
-2. [Prerequisites](#prerequisites)
-3. [Step 1 - Install and verify Node.js](#step-1---install-and-verify-nodejs)
-4. [Step 2 - Understand the choice of Expo](#step-2---understand-the-choice-of-expo)
-5. [Step 3 - Prepare the tools](#step-3---prepare-the-tools)
-6. [Step 4 - Create the project](#step-4---create-the-project)
-7. [Step 5 - Explore the project structure](#step-5---explore-the-project-structure)
-8. [Step 6 - Write the first screen](#step-6---write-the-first-screen)
-9. [Step 7 - Run the application](#step-7---run-the-application)
-10. [Troubleshooting](#troubleshooting)
-11. [Project structure](#project-structure)
-12. [Resources](#resources)
+1. [Overview](#-overview)
+2. [Prerequisites](#-prerequisites)
+3. [Step 1 - Install and verify Node.js](#-step-1---install-and-verify-nodejs)
+4. [Step 2 - Understand the choice of Expo](#-step-2---understand-the-choice-of-expo)
+5. [Step 3 - Prepare the tools](#-step-3---prepare-the-tools)
+6. [Step 4 - Create the project](#-step-4---create-the-project)
+7. [Step 5 - Explore the project structure](#-step-5---explore-the-project-structure)
+8. [Step 6 - Write the first screen](#-step-6---write-the-first-screen)
+9. [Step 7 - Run the application](#-step-7---run-the-application)
+10. [Troubleshooting](#-troubleshooting)
+11. [Project structure](#-project-structure)
+12. [Resources](#-resources)
 
 ---
 
-## Overview
+## 🎯 Overview
 
 By the end of this lab you will be able to:
 
@@ -32,7 +50,7 @@ By the end of this lab you will be able to:
 - Create and run a working React Native project with Expo.
 - Identify the structure of a project and the role of its key files.
 
-## Prerequisites
+## 🧰 Prerequisites
 
 | Tool | Purpose |
 |------|---------|
@@ -44,7 +62,7 @@ By the end of this lab you will be able to:
 
 ---
 
-## Step 1 - Install and verify Node.js
+## 📦 Step 1 - Install and verify Node.js
 
 Node.js is a server-side JavaScript runtime. React Native uses it to run the build tools, manage dependencies through a package manager and run the development server.
 
@@ -55,7 +73,7 @@ Node.js is a server-side JavaScript runtime. React Native uses it to run the bui
 3. Run the installer and keep the recommended options.
 4. Restart your terminal if necessary.
 
-> **Note:** If you install from the source code instead of the installer, you must add the `bin` folder to the `PATH` environment variable manually.
+> 💡 **Note:** If you install from the source code instead of the installer, you must add the `bin` folder to the `PATH` environment variable manually.
 
 ### 1.2 Verify the installation
 
@@ -97,7 +115,7 @@ Hello, World!
 
 ---
 
-## Step 2 - Understand the choice of Expo
+## 🤔 Step 2 - Understand the choice of Expo
 
 React Native lets you build mobile applications in JavaScript or TypeScript. There are two main approaches.
 
@@ -110,11 +128,11 @@ React Native lets you build mobile applications in JavaScript or TypeScript. The
 | Emulators | Optional at the beginning | Useful for local development |
 | Best for | Beginners, prototypes, common projects | Projects that need direct control of native components |
 
-**This lab uses Expo.** It lets you focus on React Native components and the interface without starting with a full native configuration.
+✅ **This lab uses Expo.** It lets you focus on React Native components and the interface without starting with a full native configuration.
 
 ---
 
-## Step 3 - Prepare the tools
+## 🔧 Step 3 - Prepare the tools
 
 ### 3.1 Expo account and Expo Go
 
@@ -142,7 +160,7 @@ Type `Y` to confirm. This allows npm scripts to run.
 
 ---
 
-## Step 4 - Create the project
+## 🆕 Step 4 - Create the project
 
 `create-react-native-app` is obsolete. The recommended command today is `npx create-expo-app`.
 
@@ -165,7 +183,7 @@ If the `code` command is not recognized, use **File → Open Folder** in VS Code
 
 ---
 
-## Step 5 - Explore the project structure
+## 📂 Step 5 - Explore the project structure
 
 The exact structure depends on the chosen Expo template. With the minimal `blank` template you will find:
 
@@ -183,7 +201,7 @@ The exact structure depends on the chosen Expo template. With the minimal `blank
 
 ---
 
-## Step 6 - Write the first screen
+## 💻 Step 6 - Write the first screen
 
 Open `App.js` and replace its content with the following code:
 
@@ -233,7 +251,7 @@ What the code does:
 
 ---
 
-## Step 7 - Run the application
+## 🚀 Step 7 - Run the application
 
 From the project folder, start the development server:
 
@@ -243,7 +261,7 @@ npx expo start
 
 The server starts and displays a QR code together with launch options.
 
-### Option A - Physical phone
+### 📱 Option A - Physical phone
 
 1. Install **Expo Go**.
 2. Scan the QR code displayed in the terminal.
@@ -254,7 +272,7 @@ The server starts and displays a QR code together with launch options.
 npx expo start --tunnel
 ```
 
-### Option B - Android emulator
+### 🤖 Option B - Android emulator
 
 1. Install **Android Studio**.
 2. Install the Android SDK components and the Android Emulator.
@@ -263,7 +281,7 @@ npx expo start --tunnel
 
 > The first setup requires downloading the Android tools.
 
-### Option C - Web browser
+### 🌐 Option C - Web browser
 
 Expo can also render the app in a browser. This needs three extra packages:
 
@@ -274,17 +292,17 @@ npx expo start --web
 
 Then open <http://localhost:8081>.
 
-### Result
+### ✅ Result
 
 The home screen of the application, rendered in the browser:
 
 ![Home screen of the application](docs/screenshots/01-home-screen.png)
 
-> **Note:** `Alert.alert` is a native feature and shows nothing in the web version. Use Expo Go or an Android emulator to see the alert when pressing **Start**.
+> ⚠️ **Note:** `Alert.alert` is a native feature and shows nothing in the web version. Use Expo Go or an Android emulator to see the alert when pressing **Start**.
 
 ---
 
-## Troubleshooting
+## 🐞 Troubleshooting
 
 | Problem | Solution |
 |---------|----------|
@@ -297,7 +315,7 @@ The home screen of the application, rendered in the browser:
 
 ---
 
-## Project structure
+## 🌳 Project structure
 
 ```text
 MOBILE_DEMO1/
@@ -311,7 +329,7 @@ MOBILE_DEMO1/
 └── package-lock.json    # Locked dependency versions
 ```
 
-## Resources
+## 📚 Resources
 
 - [Node.js documentation](https://nodejs.org/en/docs)
 - [Expo documentation](https://docs.expo.dev/)
@@ -320,3 +338,11 @@ MOBILE_DEMO1/
 ---
 
 Author: Youssef Lagmouch, 4IIR, EMSI. Course supervised by Pr. F.Z. Fagroud.
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:61DAFB,100:4A90E2&height=120&section=footer" alt="footer wave" />
+
+Made with ❤️ by **Youssef Lagmouch**
+
+</div>
