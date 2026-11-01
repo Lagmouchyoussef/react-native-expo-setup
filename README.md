@@ -20,7 +20,6 @@
 
 A step-by-step guide to setting up a React Native development environment with Node.js, npm and Expo, followed by the creation and execution of a first mobile application.
 
-> 🎓 **Context:** Lab 1 (TP1) of the *Mobile Development* course, 4IIR, EMSI.
 
 ---
 
