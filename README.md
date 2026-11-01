@@ -337,7 +337,6 @@ MOBILE_DEMO1/
 
 ---
 
-Author: Youssef Lagmouch, 4IIR, EMSI. Course supervised by Pr. F.Z. Fagroud.
 
 <div align="center">
 
